@@ -11,19 +11,11 @@
 		"cors": "^2.8.5",
 		"dotenv": "^8.2.0",
 		"express": "^4.16.4",
+		"express-async-errors": "^3.1.1",
 		"mongoose": "^6.8.3"
 	},
 	"repository": {
 		"url": "https://github.com/freeCodeCamp/boilerplate-project-exercisetracker"
 	},
-	"keywords": [
-		"node",
-		"express",
-		"mongodb",
-		"mongoose",
-		"exercise",
-		"tracker",
-		"freeCodeCamp"
-	],
 	"license": "MIT"
 }
