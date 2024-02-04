@@ -1,5 +1,24 @@
-# Timestamp Microservice
-# Documentation
+# exercise_tracker
+
+## Motivation
+
+### Goal
+
+⚙️ Installation
+
+Setup
+Clone the repo by running git clone git@github.com:backendkolawole/Exercise-Tracker.git in terminal
+
+Create a .env file and set up the PORT variable
+Set up MONGO_URI connection string in the .env file
+
+run npm install
+
+run npm start
+
+## Other usage examples
+
+Documentation
 You can POST to /api/users with form data username to create a new user.
 
 The returned response from POST /api/users with form data username will be an object with username and _id properties.
@@ -30,7 +49,7 @@ The date property of any object in the log array that is returned from GET /api/
 
 You can add from, to and limit parameters to a GET /api/users/:_id/logs request to retrieve part of the log of any user. from and to are dates in yyyy-mm-dd format. limit is an integer of how many logs to send back.
 
-# Example
+Example
 The responses should have the following structures.
 
 Exercise:
@@ -61,16 +80,10 @@ Log:
     }]
     }
 
+## Closing and resources 
+## Contact
+## Contributing
 
-# Setup
-Clone the repo by running git clone git@github.com:backendkolawole/Exercise-Tracker.git in terminal
-
-Create a .env file and set up the PORT variable
-Set up MONGO_URI connection string in .env file
-
-run npm install
-
-run npm start
 
 
 
