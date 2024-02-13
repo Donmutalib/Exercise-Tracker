@@ -9,7 +9,7 @@ const createUser = async (req, res) => {
 const getAllUsers = async (req, res) => {
 
     const users = await User.find()
-    if (!users) return res.send('No users found')
+    if (!users) return res.status(404).send('No users found')
     res.status(200).json(users)
 }
 
@@ -46,7 +46,7 @@ const getUserLogs = async (req, res) => {
     const {_id} = req.params
     const user = await User.findById(_id)
     if (!user) {
-        res.send("No user found for that ID");
+        res.status(404).send("No user found for that ID");
     }
     const {from, to, limit} = req.query
     let log = user.log;

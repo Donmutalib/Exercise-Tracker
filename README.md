@@ -61,9 +61,11 @@ You can POST to `[project_url]/api/users` with form data username to create a ne
 
 ```
 
-You can request GET to /api/users to get a list of all users.
+You can request GET to `[project_url]/api/users` to get a list of all users.
 
 **GET [project_url]/api/users**
+
+- Possible responses
 
 ```
 200 (OK)
@@ -83,15 +85,20 @@ You can request GET to /api/users to get a list of all users.
     }
 ]
 
+404 (Not Found)
+
+No users found
+
 ```
 
-You can POST to /api/users/:_id/exercises with form data description, duration, and optionally date. If no date is supplied, the current date will be used.
+You can POST to `[project_url]/api/users/:_id/exercises` with form data description, duration, and optionally date. If no date is supplied, the current date will be used.
 
 **POST [project_url]/api/users/:_id/exercises**
 
 The response will be the user object with the exercise fields added.
 
 ```
+200 (OK)
 {
     "username": "first user",
     "description": "exercise description",
@@ -105,6 +112,8 @@ The response will be the user object with the exercise fields added.
 You can make a GET request to `[project_url]/api/users/:_id/logs` to retrieve a full exercise log of any user.
 
 **GET [project_url]/api/users/:_id/logs**
+
+- Possible responses
 
 ```
 200 (OK)
@@ -121,6 +130,11 @@ You can make a GET request to `[project_url]/api/users/:_id/logs` to retrieve a 
         }
     ]
 }
+
+404 (Not Found)
+
+No user found for that ID
+
 ```
 
 Should return a user object with a count property representing the number of exercises that belong to that user.
